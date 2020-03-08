@@ -30,9 +30,13 @@ Single-turn models:
 Multi-turn models:
 * W2V (NN) + WMD + DAM
 
-Notes:
+Notes: <br/>
 WMD = Word Mover's Distance <br/>
 W2V = word embeddings from Google News Corpus <br/>
 BERT = Bidirectional Encoder Representations from Transformers <br/>
 NN = nearest neighbors (relevant words) <br/>
 DAM = Deep Attention Matching Network <br/>
+
+## Screenshots
+
+<img src='https://imgur.com/a/8AkcoGB' title='chatbot-demo' width='' alt='Chatbot Demo' />
