@@ -39,4 +39,4 @@ DAM = Deep Attention Matching Network <br/>
 
 ## Screenshots
 
-<img src='https://imgur.com/a/8AkcoGB' title='chatbot-demo' width='' alt='Chatbot Demo' />
+<img src='https://i.imgur.com/RFidJt1.png' title='chatbot-demo' width='' alt='Chatbot Demo' />
