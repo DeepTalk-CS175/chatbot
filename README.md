@@ -1,13 +1,11 @@
 # CS 175 IR-based Chatbot
 A Conversational chatbot based on information retreival techniques. It was trained through DailyDialog dataset.
 
-Note: GoogleNews-vectors-negative300.bin is ignored as the file size is too large.
-
 ## How to Run this Chatbot in Your Local Machine
 ### Prerequisites
 * Flask
 * DailyDialog dataset
-* Google News pre-trained word2vec model
+* Google News pre-trained word2vec model (not included in this repo as the file size is too large)
 * Packages needed: 
     * Gensim
     * pyemd
@@ -22,11 +20,17 @@ Note: GoogleNews-vectors-negative300.bin is ignored as the file size is too larg
 3. Start server: `python3 app.py`
 
 ## Techniques We Used
+We first tried single-turn models (does not care about context history). Then, we moved one step forward by which the bot will return a response based on previous utterances (aka. contexts). We picked Deep Attention Matching Network for the multi-turn conversation.
+
+Single-turn models:
 1. BM25 + WMD
 2. W2V (NN) + WMD
 3. W2V (NN) + WMD + BERT
-4. W2V (NN) + WMD + DAM 
 
+Multi-turn models:
+* W2V (NN) + WMD + DAM
+
+Notes:
 WMD = Word Mover's Distance <br/>
 W2V = word embeddings from Google News Corpus <br/>
 BERT = Bidirectional Encoder Representations from Transformers <br/>
